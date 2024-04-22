@@ -21,24 +21,23 @@ public class Main {
             greatest = first;
         } else if (second > first && second > third) {
             greatest = second;
-        } else if (third > first && third > second) {
+        } else {
             greatest = third;
         }
         if (first < second && first < third) {
             smallest = first;
         } else if (second < first && second < third) {
             smallest = second;
-        } else if (third < first && third < second) {
+        } else {
             smallest = third;
         }
         if ((first < second && first > third) || (first > second && first < third)) {
             average = first;
         } else if ((second < first && second > third) || (second > first && second < third)) {
             average = second;
-        } else if ((third < first && third > second) || (third > first && third < second)) {
+        } else {
             average = third;
         }
-
 
 
         //todo
